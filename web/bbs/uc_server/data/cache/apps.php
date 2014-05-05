@@ -5,7 +5,7 @@ $_CACHE['apps'] = array (
     'appid' => '1',
     'type' => 'DISCUZX',
     'name' => 'Discuz! Board',
-    'url' => 'http://www.canyouhike.com/bbs',
+    'url' => 'http://hike.me',
     'authkey' => 'seu7NeB4Hdp4h9mfT8MdEfl6Z9w0Jfte2c51m896F2GaM6A4de0d2811hfR5Af4b',
     'ip' => '',
     'viewprourl' => '',
@@ -14,8 +14,17 @@ $_CACHE['apps'] = array (
     'dbcharset' => '',
     'synlogin' => '1',
     'recvnote' => '1',
-    'extra' => '',
-    'tagtemplates' => '',
+    'extra' => 
+    array (
+      'apppath' => '',
+      'extraurl' => 
+      array (
+      ),
+    ),
+    'tagtemplates' => '<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="template"><![CDATA[]]></item>
+</root>',
     'allowips' => '',
   ),
 );

@@ -1,7 +1,7 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
-|| checktplrefresh('./template/win8mi_1st_geek/common/header.htm', './template/win8mi_1st_geek/common/header_common.htm', 1398015745, '4', './data/template/3_4_common_header_forum_index.tpl.php', './template/win8mi_1st_geek', 'common/header_forum_index')
-|| checktplrefresh('./template/win8mi_1st_geek/common/header.htm', './template/win8mi_1st_geek/common/pubsearchform.htm', 1398015745, '4', './data/template/3_4_common_header_forum_index.tpl.php', './template/win8mi_1st_geek', 'common/header_forum_index')
+|| checktplrefresh('./template/win8mi_1st_geek/common/header.htm', './template/win8mi_1st_geek/common/header_common.htm', 1399039697, '4', './data/template/3_4_common_header_forum_index.tpl.php', './template/win8mi_1st_geek', 'common/header_forum_index')
+|| checktplrefresh('./template/win8mi_1st_geek/common/header.htm', './template/win8mi_1st_geek/common/pubsearchform.htm', 1399039697, '4', './data/template/3_4_common_header_forum_index.tpl.php', './template/win8mi_1st_geek', 'common/header_forum_index')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
