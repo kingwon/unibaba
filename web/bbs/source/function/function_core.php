@@ -659,7 +659,8 @@ function getcurrentnav() {
 		return $_G['mnid'];
 	}
 	$mnid = '';
-	$_G['basefilename'] = $_G['basefilename'] == $_G['basescript'] ? $_G['basefilename'] : $_G['basescript'].'.php';
+	// $_G['basefilename'] = $_G['basefilename'] == $_G['basescript'] ? $_G['basefilename'] : $_G['basescript'].'.php';
+	$_G['basefilename'] = $_G['basefilename'] == $_G['basescript'] ? ($_G['basescript'].'.php') : $_G['basefilename']; //fix by kingwon on 2014.05.06
 	if(isset($_G['setting']['navmns'][$_G['basefilename']])) {
 		if($_G['basefilename'] == 'home.php' && $_GET['mod'] == 'space' && (empty($_GET['do']) || in_array($_GET['do'], array('follow', 'view')))) {
 			$_GET['mod'] = 'follow';

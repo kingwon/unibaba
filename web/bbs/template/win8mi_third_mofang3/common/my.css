@@ -1,0 +1,29 @@
+.search-box{
+    position: relative;
+    width: 100%;
+    min-width: 980px;
+    background: #ececec url() no-repeat center top;
+    height: 300px;
+    margin: 0 auto 58px;
+    padding-top: 200px;
+}
+.pla_indsearchs {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.6);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#4b000000', EndColorStr='#4b000000');
+    color: #fff;
+}
+.search input{
+    width: 536px;
+    height: 30px;
+    padding: 10px 44px 10px 20px;
+    border: none;
+    background: #fff url(../src/img/ind_sch.png) no-repeat 562px center;
+    box-shadow: 0 0 3px rgba(0,0,0,0.15);
+    font-size: 20px;
+    line-height: 30px;
+}

@@ -58,18 +58,16 @@ $diynav
 <!--顶部导航开始-->
 <div id="headtop" class="cl"> 
   <!--{hook/global_cpnav_top}-->
+  <div class="logo">
+    <h1> 
+      <!--{if !isset($_G['setting']['navlogos'][$mnid])}--> 
+      <a href="./" title="$_G['setting']['bbname']">{$_G['style']['boardlogo']}</a> 
+      <!--{else}--> 
+      $_G['setting']['navlogos'][$mnid] 
+      <!--{/if}--> 
+    </h1>
+  </div>  
   <div class="wp">
-  
-    <div class="logo">
-      <h1> 
-        <!--{if !isset($_G['setting']['navlogos'][$mnid])}--> 
-        <a href="./" title="$_G['setting']['bbname']">{$_G['style']['boardlogo']}</a> 
-        <!--{else}--> 
-        $_G['setting']['navlogos'][$mnid] 
-        <!--{/if}--> 
-      </h1>
-    </div>  
-  
     <div id="headnav" class="nav_box">
         <!--Start Navigation--> 
         <!--{eval $mnid = getcurrentnav();}-->
