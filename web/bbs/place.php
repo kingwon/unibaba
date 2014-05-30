@@ -4,12 +4,12 @@
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
  *      This is NOT a freeware, use is subject to license terms
  *
- *      $Id: plan.php 01 2014.04.15 01:19:00  kingwon680@gmail.com $
+ *      $Id: place.php 01 2014.04.15 01:19:00  kingwon680@gmail.com $
  */
 
 // 定义应用 ID 全局记录当前用户所在位置，不需要可定义为0 不要省略
 define('APPTYPEID', 0);
-define('CURSCRIPT', 'plan');
+define('CURSCRIPT', 'place');
 
 
 //====================================
