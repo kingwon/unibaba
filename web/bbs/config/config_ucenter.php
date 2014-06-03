@@ -8,7 +8,7 @@ define('UC_DBUSER', 'a0314225158');
 define('UC_DBPW', '59667799');
 define('UC_DBNAME', 'a0314225158');
 define('UC_DBCHARSET', 'utf8');
-define('UC_DBTABLEPRE', '`a0314225158`.pre_ucenter_');
+define('UC_DBTABLEPRE', '`a0314225158`.hike_ucenter_');
 define('UC_DBCONNECT', 0);
 
 define('UC_CHARSET', 'utf-8');

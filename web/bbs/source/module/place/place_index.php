@@ -4,22 +4,21 @@ if(!defined('IN_DISCUZ')) {
     exit('Access Denied');
 }
 
-//初始化当前页码
-$page = empty($_GET['page'])?1:intval($_GET['page']);
-if($page<1) $page=1;
-
-//分页
-$perpage = 20;
-$start = ($page-1)*$perpage;
-
-//获取当前页的留言数据
-$list = array();
-$query = DB::query("SELECT * FROM ".DB::table('mood_wall')." WHERE 1 ORDER BY dateline DESC LIMIT $start, $perpage");
-while($mood = DB::fetch($query)) {
-    $mood['dateline'] = dgmdate($mood['dateline'], 'u');
-    $list[] = $mood;
+//获取范围
+$areas = array();
+$query = DB::query("SELECT * FROM ".DB::table('place')." WHERE 1 AND pl_type = 2");
+while($area = DB::fetch($query)){
+    $areas[]=$area;
 }
 
+//获取目的地
+$places = array();
+$query = DB::query("SELECT * FROM ".DB::table('place')." WHERE 1 AND pl_type = 1");
+while($place = DB::fetch($query)){
+    $places[]=$place;
+}
+var_dump($areas);
+var_dump($places);
 //获得一个简单的分页，只有上一页和下一页，这个不需要count()数据表中的所有记录
 $multi = simplepage(count($list), $perpage, $page, 'mood.php?mod=list');
 

@@ -15,18 +15,18 @@
     <div class="main-top">
         <div class="head-menu fl">
             <ul id="J-head-menu">
-                <li class="head-menu-item yahei pr" data-index="0">Top推荐<span class="num">(20)</span></li>
-                <li class="head-menu-item yahei pr" data-index="1">国内<span class="num">(53)</span></li>
-                <li class="head-menu-item yahei pr" data-index="2">亚洲<span class="num">(24)</span></li>
-                <li class="head-menu-item yahei pr" data-index="3">欧洲<span class="num">(32)</span></li>
-                <li class="head-menu-item yahei pr" data-index="4">大洋洲<span class="num">(15)</span></li>
-                <li class="head-menu-item yahei pr current" data-index="5">北美洲<span class="num">(15)</span></li>
-                <li class="head-menu-item yahei pr" data-index="6">南美洲<span class="num">(12)</span></li>
-                <li class="head-menu-item yahei last pr" data-index="7">非洲<span class="num">(18)</span></li>
+                <!--{if $list}-->
+                    <!--//说明: loop 循环一个数组 相当于foreach(){}-->
+                    <!--{loop $list $area}-->
+                    <li class="head-menu-item yahei pr" data-index="0">$area['pl_name']<span class="num">$area['pl_num']</span></li>
+                    <!--{/loop}-->
+                    <!--//说明: 显示准备好的分页链接-->
+                    $multi
+                <!--{else}-->
+                    <p class="emp">暂时没有记录...</p>
+                <!--{/if}-->
             </ul>
         </div>
-        <div class="head-menu-sub nslog-area" id="J-head-menu-alert" data-nslog="{'type':302,'page':'scene','cmd':'click','pos':'top-recommend-text'}" style="left: 351px; top: 290px;"><div class="head-menu-sub-bg-for-ie"></div><ul><li class="clearfix"><div class="head-menu-sub-type fl">西欧</div><div class="head-menu-sub-list fl"><a href="/faguo/" target="_blank">法国</a><a href="/yingguo/" target="_blank">英国</a><a href="/bali/" target="_blank">巴黎</a><a href="/helan/" target="_blank">荷兰</a><a href="/aierlan/" target="_blank">爱尔兰</a><a href="/bilishi/" target="_blank">比利时</a><a href="/lusenbao/" target="_blank">卢森堡</a></div></li><li class="clearfix"><div class="head-menu-sub-type fl">南欧</div><div class="head-menu-sub-list fl"><a href="/xila/" target="_blank">希腊</a><a href="/yidali/" target="_blank">意大利</a><a href="/xibanya/" target="_blank">西班牙</a><a href="/aiqinhai/" target="_blank">爱琴海</a><a href="/weinisi/" target="_blank">威尼斯</a><a href="/luoma/" target="_blank">罗马</a></div></li><li class="clearfix"><div class="head-menu-sub-type fl">中欧</div><div class="head-menu-sub-list fl"><a href="/ruishi/" target="_blank">瑞士</a><a href="/deguo/" target="_blank">德国</a><a href="/aodili/" target="_blank">奥地利</a><a href="/jieke/" target="_blank">捷克</a><a href="/xiongyali/" target="_blank">匈牙利</a><a href="/munihei/" target="_blank">慕尼黑</a><a href="/bolan/" target="_blank">波兰</a></div></li><li class="clearfix"><div class="head-menu-sub-type fl">北欧</div><div class="head-menu-sub-list fl"><a href="/bingdao/" target="_blank">冰岛</a><a href="/ruidian/" target="_blank">瑞典</a><a href="/fenlan/" target="_blank">芬兰</a><a href="/danmai/" target="_blank">丹麦</a><a href="/nuowei/" target="_blank">挪威</a><a href="/gebenhagen/" target="_blank">哥本哈根</a><a href="/aosilu/" target="_blank">奥斯陆</a></div></li><li class="clearfix"><div class="head-menu-sub-type fl">东欧</div><div class="head-menu-sub-list fl"><a href="/eluosi/" target="_blank">俄罗斯</a><a href="/tuerqi/" target="_blank">土耳其</a><a href="/wukelan/" target="_blank">乌克兰</a><a href="/mosike/" target="_blank">莫斯科</a><a href="/latuoweiya/" target="_blank">拉脱维亚</a></div></li></ul><div class="corner"></div></div>
-        <div class="flash-wrap fl" id="J-flash-container"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" id="joumap" width="806" height="396" align="middle"><param name="wmode" value="opaque"><param name="movie" value="/static/destination/flash/JouMap.swf?ver=1.4"><param name="flashvars" value="xml=%2Fdestination%2Fajax%2Ftop%3Fformat%3Dxml%26v%3D1401291150208&amp;jns=Baidu_JOU."><embed width="806" height="396" wmode="opaque" align="middle" flashvars="xml=%2Fdestination%2Fajax%2Ftop%3Fformat%3Dxml%26v%3D1401291150208&amp;jns=Baidu_JOU." src="/static/destination/flash/JouMap.swf?ver=1.4" name="joumap" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></object></div>
         
     </div>
 </div>
