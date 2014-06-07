@@ -23,7 +23,7 @@ if(DOMAIN_TOP == 'me' || $_GET['debug']){
 }
 
 // 定义应用目录
-define('APP_PATH','./Garage/');
+define('APP_PATH','./Hike/');
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

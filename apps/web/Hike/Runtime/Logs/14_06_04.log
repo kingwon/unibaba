@@ -1,0 +1,133 @@
+[ 2014-06-04T21:16:17+08:00 ] 127.0.0.1 /home/repair/lists.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+NOTIC: [2] Missing argument 1 for I(), called in E:\Github\unibaba\apps\web\Hike\Home\Controller\RepairController.class.php on line 17 and defined E:\Github\unibaba\apps\web\ThinkPHP\Common\functions.php 第 220 行.
+NOTIC: [8] Undefined variable: name E:\Github\unibaba\apps\web\ThinkPHP\Common\functions.php 第 221 行.
+NOTIC: [2048] Declaration of Home\Logic\DetailLogic::add() should be compatible with that of Think\Model::add() E:\Github\unibaba\apps\web\Hike\Home\Logic\DetailLogic.class.php 第 11 行.
+NOTIC: [2048] Declaration of Home\Logic\DetailLogic::save() should be compatible with that of Think\Model::save() E:\Github\unibaba\apps\web\Hike\Home\Logic\DetailLogic.class.php 第 11 行.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2014-06-04T21:19:44+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001881s ]
+
+[ 2014-06-04T21:20:21+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+ERR: 非法操作:lists
+
+[ 2014-06-04T21:20:37+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant THEME_PATH - assumed 'THEME_PATH' E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template.class.php 第 104 行.
+NOTIC: [2] file_get_contents(THEME_PATHlayout.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template.class.php 第 105 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2014-06-04T21:21:04+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+ERR: 模板不存在:./Hike/Home/View/Place/index.html
+
+[ 2014-06-04T21:26:06+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+ERR: 模板不存在:./Hike/Home/View/Place/index.html
+
+[ 2014-06-04T21:34:52+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001943s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined variable: Think E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 46 行.
+NOTIC: [8] Undefined variable: Think E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 47 行.
+NOTIC: [8] Undefined variable: Think E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 48 行.
+NOTIC: [8] Undefined variable: Think E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 49 行.
+NOTIC: [8] Undefined variable: Think E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 50 行.
+NOTIC: [8] Undefined variable: list E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 100 行.
+NOTIC: [8] Undefined variable: page E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 124 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.087629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2014-06-04T21:53:49+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined variable: Think E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 47 行.
+NOTIC: [8] Undefined variable: Think E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 48 行.
+NOTIC: [8] Undefined variable: Think E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 49 行.
+NOTIC: [8] Undefined variable: Think E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 50 行.
+NOTIC: [8] Undefined variable: Think E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 51 行.
+NOTIC: [8] Undefined variable: list E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 101 行.
+NOTIC: [8] Undefined variable: page E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 125 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2014-06-04T21:59:05+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+NOTIC: [8] Undefined offset: 1 E:\Github\unibaba\apps\web\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 495 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined variable: list E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 92 行.
+NOTIC: [8] Undefined variable: page E:\Github\unibaba\apps\web\Hike\Runtime\Cache\Home\e3e8cfbef339ac65dde3a4e164a1d4e3.php 第 116 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
