@@ -54,9 +54,24 @@
         </div>
     </div>
     <!-- END footer -->
-    <import file="dist.js.lib" />
+    <!-- JS================================================== -->
+    <!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
+    <!-- <import file="dist.js.lib" />
     <import file="dist.js.base" />
-    <import file="js.frame" />
-
+    <import file="js.frame" /> -->
+    <import file="js.other.superfish" />
+    <import file="js.other.jquery-flexslider" />
+    <import file="js.other.jquery-tweet" />
+    <import file="js.other.selectnav" />
+    <import file="js.other.jquery-fancybox" />
+    <import file="js.other.functions" />
+    
+    <script>
+        $(document).ready(function() {
+            $(".slider .flexslider").flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
 </body>
 </html>
