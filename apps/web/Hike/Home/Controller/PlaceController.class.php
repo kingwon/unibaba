@@ -9,7 +9,14 @@ namespace Home\Controller;
 use Think\Controller;
 use \Exception;
 class PlaceController extends Controller {
+    
+    protected $placeLogic = '';
+    
     public function index(){
+        $this->placeLogic = D('Place');
+        $places = $this->placeLogic->getAllPlace();
+        // var_dump($place);
+        $this->assign('places' , $places);
         $this->display();
     }
     

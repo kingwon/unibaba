@@ -1,1 +1,49 @@
-<h1>shjsjjjjj</h1>
+    <div class="container">
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron">
+          <ul class="nav nav-pills nav-stacked nav-area">
+            <foreach name="places" item="area">
+              <?php if(!empty($area['places'])) :?>
+                <li class="dropdown">
+                <label class="dropdown-toggle" data-toggle="dropdown">{$area.pl_name} <b class="caret"></b></label>
+                <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a> -->
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <foreach name="area.places" item="place">
+                      <li role="presentation"><a role="menuitem" class="current" tabindex="-1" href="#">{$place.pl_name}</a></li>
+                    </foreach>
+                  </ul>
+              <?php else: ?>
+                <li>{$area.pl_name}
+              <?php endif;?>
+              </li>
+            </foreach>
+          </ul>
+        </div> 
+    
+    </div>
+
+    <!-- /container -->
+    
+    <script type="text/javascript">
+      window.onload=function(){
+        // alert(1);
+      }
+      // $(function(){
+      //   alert(1);
+      //   console.log(111111111111111);
+      // });
+      // $('.dropdown-toggle').dropdown();
+      $('.dropdown').mouseenter(function(){
+        // $(this).find('.dropdown-menu').dropdown('toggle');
+        $(this).find('.dropdown-toggle').dropdown('toggle');
+      });
+      $('.dropdown').mouseleave(function(){
+        $(this).find('.dropdown-toggle').dropdown('toggle');
+      });
+      $('.current').click(function(){
+        // alert(11);
+        console.log($(this).parents('.dropdown-toggle'));
+        $(this).parent('.dropdown-toggle').dropdown('toggle');
+      });
+    </script>

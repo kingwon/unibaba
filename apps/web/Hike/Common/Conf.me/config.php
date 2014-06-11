@@ -2,8 +2,8 @@
 return array(
     'DEFAULT_CHARSER' => 'UTF-8',
     'URL_MODEL' => 2, //url规则
-    //'APP_GROUP_LIST' => 'Home,Admin,User',
-    //'DEFAULT_GROUP' => 'Home',
+    'APP_GROUP_LIST' => 'Home,Admin,User',
+    'DEFAULT_GROUP' => 'Home',
     'LAYOUT_ON'=>true,
     'LAYOUT_NAME'=>'layout',
     'DEFAULT_CONTROLLER' => 'Place',
