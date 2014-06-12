@@ -15,7 +15,7 @@ class PlaceController extends Controller {
     public function index(){
         $this->placeLogic = D('Place');
         $places = $this->placeLogic->getAllPlace();
-        // var_dump($place);
+        var_dump($places);
         $this->assign('places' , $places);
         $this->display();
     }

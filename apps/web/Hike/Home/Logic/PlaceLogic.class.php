@@ -26,6 +26,7 @@ class PlaceLogic extends Model {
     */
     public function getAllPlace(array $post){
         $area = $this->getList(array('pl_type' => 2));
+        // var_dump($area);die;
         foreach ($area as $key => $value) {
             $area[$key]['places'] = $this->getList(array('pl_type' => 1, 'pl_fid' => $value['pl_id']));
         }
@@ -101,6 +102,9 @@ class PlaceLogic extends Model {
             ->alias('p')
             // ->join('__PARTS__ p ON d.detail_fix_parts_id = p.parts_id', 'LEFT')
             ->field(array('*'));
+        if($args['pl_type'] == 1){
+            $this->placeObj->join('__GROUP__ g ON g.pl_id = p.pl_id', 'LEFT');
+        }
         if(false !== $page){
             $countObj = clone $this->placeObj;
             $page = new \Think\Page($countObj->count(), 10);// 实例化分页类 传入总记录数和每页显示的记录数

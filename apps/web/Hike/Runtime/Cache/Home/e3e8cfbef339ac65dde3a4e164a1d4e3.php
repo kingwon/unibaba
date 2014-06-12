@@ -91,7 +91,8 @@
                 <label class="dropdown-toggle" data-toggle="dropdown"><?php echo ($area["pl_name"]); ?> <b class="caret"></b></label>
                 <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a> -->
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <?php if(is_array($area["places"])): foreach($area["places"] as $key=>$place): ?><li role="presentation"><a role="menuitem" class="current" tabindex="-1" href="#"><?php echo ($place["pl_name"]); ?></a></li><?php endforeach; endif; ?>
+                    <?php if(is_array($area["places"])): foreach($area["places"] as $key=>$place): ?><li role="presentation"><a role="menuitem" class="current" tabindex="-1" href="#"><?php echo ($place["pl_name"]); ?> &nbsp;<?php echo !empty($place['gr_people_number']) ? ("(" .$place['gr_people_number'] . ")" . '&nbsp;<input type="checkbox" name="pl_id" value="' . $place['pl_id'] .'">') : '创建圈子'?></a></li><?php endforeach; endif; ?>
+                    <li role="presentation"><a role="menuitem" class="current" tabindex="-1" href="#">加入圈子</a></li>
                   </ul>
               <?php else: ?>
                 <li><?php echo ($area["pl_name"]); ?>

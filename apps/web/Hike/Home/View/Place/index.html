@@ -10,8 +10,9 @@
                 <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a> -->
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                     <foreach name="area.places" item="place">
-                      <li role="presentation"><a role="menuitem" class="current" tabindex="-1" href="#">{$place.pl_name}</a></li>
+                      <li role="presentation"><a role="menuitem" class="current" tabindex="-1" href="#">{$place.pl_name} &nbsp;<?php echo !empty($place['gr_people_number']) ? ("(" .$place['gr_people_number'] . ")" . '&nbsp;<input type="checkbox" name="pl_id" value="' . $place['pl_id'] .'">') : '创建圈子'?></a></li>
                     </foreach>
+                    <li role="presentation"><a role="menuitem" class="current" tabindex="-1" href="#">加入圈子</a></li>
                   </ul>
               <?php else: ?>
                 <li>{$area.pl_name}
