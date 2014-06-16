@@ -8,31 +8,27 @@
 namespace Home\Controller;
 use Think\Controller;
 use \Exception;
-class PlaceController extends Controller {
+class GroupController extends Controller {
     
-    protected $placeLogic = '';
     
     public function index(){
-        $this->placeLogic = D('Place');
-        $places = $this->placeLogic->getAllPlace();
-        // var_dump($places);
-        $this->assign('places' , $places);
-        $this->display();
+        echo 'welcome to canyouhike.com  网站建设中，敬请关注！';
+        // $this->show('welcome to canyouhike.com', 'utf-8');
     }
     
     /**
-    * 新增维修记录
+    * 创建圈子
     *
     */
-    public function add(){
-        $staff = D('Staff')->getAllStaffIdNames();
-        $type = D('RepairType')->getAllTypeIdNames();
-        $parts = D('Parts')->getAllpartsIdNames();
-        
-        $this->assign('staff', $staff);
-        $this->assign('type', $type);
-        $this->assign('parts', $parts);
-        $this->display();
+    public function addByAjax(){
+        try{
+            $post = I();
+            $post['pl_id'] = 10;
+            $rs = D('Group')->addByPlace($post);
+        }catch(Exception $e){
+            json(true, $e->getMessage());
+        }
+        json(false, '圈子创建成功', U('Group/myGroup'));
     }
 
     /**

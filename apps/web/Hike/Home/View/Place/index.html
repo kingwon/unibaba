@@ -29,22 +29,23 @@
     <script type="text/javascript">
       window.onload=function(){
         // alert(1);
+        $('.dropdown-toggle').dropdown('toggle');
       }
       // $(function(){
       //   alert(1);
       //   console.log(111111111111111);
       // });
       // $('.dropdown-toggle').dropdown();
-      $('.dropdown').mouseenter(function(){
-        // $(this).find('.dropdown-menu').dropdown('toggle');
-        $(this).find('.dropdown-toggle').dropdown('toggle');
-      });
-      $('.dropdown').mouseleave(function(){
-        $(this).find('.dropdown-toggle').dropdown('toggle');
-      });
-      $('.current').click(function(){
-        // alert(11);
-        console.log($(this).parents('.dropdown-toggle'));
-        $(this).parent('.dropdown-toggle').dropdown('toggle');
-      });
+      // $('.dropdown').mouseenter(function(){
+      //   // $(this).find('.dropdown-menu').dropdown('toggle');
+      //   $(this).find('.dropdown-toggle').dropdown('toggle');
+      // });
+      // $('.dropdown').mouseleave(function(){
+      //   $(this).find('.dropdown-toggle').dropdown('toggle');
+      // });
+      // $('.current').click(function(){
+      //   // alert(11);
+      //   console.log($(this).parents('.dropdown-toggle'));
+      //   $(this).parent('.dropdown-toggle').dropdown('toggle');
+      // });
     </script>

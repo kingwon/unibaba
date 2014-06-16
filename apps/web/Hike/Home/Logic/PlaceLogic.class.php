@@ -102,7 +102,7 @@ class PlaceLogic extends Model {
             ->alias('p')
             // ->join('__PARTS__ p ON d.detail_fix_parts_id = p.parts_id', 'LEFT')
             ->field(array('*'));
-        if($args['pl_type'] == 1){
+        if(isset($args['pl_type']) && $args['pl_type'] == 1){
             $this->placeObj->join('__GROUP__ g ON g.pl_id = p.pl_id', 'LEFT');
         }
         if(false !== $page){
@@ -119,12 +119,12 @@ class PlaceLogic extends Model {
     * 根据id获取单条记录
     *
     */
-    public function getOneById($detailId){
-        if (empty($detailId)) {
+    public function getOneById($placeId){
+        if (empty($placeId)) {
             return '没有找到数据';
         }
         
-        $data = $this->getList(array('detail_id' => $detailId));
+        $data = $this->getList(array('pl_id' => $placeId));
         return reset($data);
     }
 }
