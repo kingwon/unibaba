@@ -50,16 +50,26 @@ class GroupController extends Controller {
     }
 
     /**
-    * 保存维修记录
+    * create or update group
     *
     */
     public function save(){
         try{
             $post = I();
-            $rs = D('Detail')->save($post);
+            $post['pl_id'] = 10;
+            $rs = D('Group')->save($post);
         }catch(Exception $e){
             json(true, $e->getMessage());
         }
-        json(false, null, U('Repair/lists'));
+        json(false, '圈子创建成功', U('Group/myGroup'));
+    }
+    
+    /**
+    * my group
+    *
+    */
+    public function myGroup(){
+        $groups = D('Group')->getMyGroup();
+        
     }
 }
