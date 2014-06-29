@@ -25,7 +25,15 @@ if(DOMAIN_TOP == 'me' || $_GET['debug']){
 // 定义应用目录
 define('APP_PATH','./Hike/');
 
+//检测登录状态
+// if(){
+    
+// }
+// $_SERVER['REDIRECT_URL'] = '/Home/Group/index.html';
+// var_dump($_SERVER);die;
+
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
+// redirect('/Home/Group/index.html', 5, '页面跳转中……');
 
 // 亲^_^ 后面不需要任何代码了 就是如此简单

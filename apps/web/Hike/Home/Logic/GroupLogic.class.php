@@ -39,7 +39,7 @@ class GroupLogic extends Model {
         if (empty($groupId)) {
             throw new Exception("数据错误", self::NO_DATA_ERRROR);
         }
-        $placeId = $this->groupObj->where('gr_id' => $groupId)->save($args);
+        $placeId = $this->groupObj->where(array('gr_id' => $groupId))->save($args);
         if(false === $placeId){
             throw new Exception("更新圈子出错", self::EDIT_ERROR);
         }
@@ -76,7 +76,7 @@ class GroupLogic extends Model {
         }
         $placeInfo = D('Place')->getOneById($args['pl_id']);
         $groupInfo = $this->getOneById($args['group_id']);
-        $args['']
+        // $args[''];
     }
     
     /**

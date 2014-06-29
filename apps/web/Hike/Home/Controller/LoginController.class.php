@@ -31,7 +31,7 @@ class LoginController extends Controller {
     public function doLogin(){
         try{
             $post = I();
-            D('User')->checkAccount($post['username'], $post['password']);
+            D('Member')->checkAccount($post['username'], $post['password']);
         }catch(Exception $re){
             json(true, $e->getMessage());
         }

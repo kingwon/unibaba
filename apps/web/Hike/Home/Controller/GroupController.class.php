@@ -9,7 +9,8 @@ namespace Home\Controller;
 use Think\Controller;
 use \Exception;
 class GroupController extends Controller {
-    
+    //忽略登录
+    protected $ignoreLogin = false;
     
     public function index(){
         echo 'welcome to canyouhike.com  网站建设中，敬请关注！';

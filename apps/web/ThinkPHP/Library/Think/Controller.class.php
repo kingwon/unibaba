@@ -28,6 +28,20 @@ abstract class Controller {
      */      
     protected $config   =   array();
 
+    /**
+     * 忽略登录 默认为忽略
+     * @var ignoreLogin
+     * @access protected
+     */      
+    protected $ignoreLogin   =   true;
+
+    /**
+     * 登录缓存时长  默认60分钟
+     * @var onlineTime
+     * @access protected
+     */      
+    protected $onlineCacheTime   =   3600;
+
    /**
      * 架构函数 取得模板对象实例
      * @access public
@@ -39,6 +53,10 @@ abstract class Controller {
         //控制器初始化
         if(method_exists($this,'_initialize'))
             $this->_initialize();
+        //检测登录  todo  检测规则，什么情况下是需要检查呢？
+        if(false === $this->ignoreLogin){
+            $this->checkLoginStatus();
+        }
     }
 
     /**
@@ -290,6 +308,20 @@ abstract class Controller {
             $this->display(C('TMPL_ACTION_ERROR'));
             // 中止执行  避免出错后继续执行
             exit ;
+        }
+    }
+    
+   /**
+     * check login
+     * @access public
+     */
+    public function checkLoginStatus() {
+        $nowTime = time();
+        $sessionTime = $_SESSION['logintime'];
+        if(($nowTime - $sessionTime) > $this->onlineTime){
+            $this->error('当前用户未登录或者登录超时，请重新登录', U('login/login'));
+        }else{
+            $_SESSION['logintime'] = $nowTime;
         }
     }
 
