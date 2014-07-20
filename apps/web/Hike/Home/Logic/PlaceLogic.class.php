@@ -26,10 +26,10 @@ class PlaceLogic extends Model {
     */
     public function getAllPlace(array $post){
         $area = $this->getList(array('pl_type' => 2));
-        // var_dump($area);die;
         foreach ($area as $key => $value) {
             $area[$key]['places'] = $this->getList(array('pl_type' => 1, 'pl_fid' => $value['pl_id']));
         }
+        // var_dump($area);die;
         
         return $area;
     }
@@ -111,7 +111,6 @@ class PlaceLogic extends Model {
             $this->placeObj->page(($p ? : $page->firstRow) , $page->listRows);
         }
         $rs = $this->placeObj->where($args)->select();
-        // echo $this->placeObj->getLastSql();
         return $rs;
     }
     

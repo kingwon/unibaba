@@ -4,7 +4,7 @@ define('UC_DBUSER', 'a0314225158');
 define('UC_DBPW', '59667799');
 define('UC_DBNAME', 'a0314225158');
 define('UC_DBCHARSET', 'utf8');
-define('UC_DBTABLEPRE', 'pre_ucenter_');
+define('UC_DBTABLEPRE', 'hike_ucenter_');
 define('UC_COOKIEPATH', '/');
 define('UC_COOKIEDOMAIN', '');
 define('UC_DBCONNECT', 0);
