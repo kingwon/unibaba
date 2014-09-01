@@ -1,18 +1,35 @@
 <?php
 
+$_top_domain_name = isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : $_SERVER['HTTP_HOST'];
+$_top_domain_name = ltrim(strtolower(substr($_top_domain_name, -3)), '.');
+
 
 $_config = array();
 
 // ----------------------------  CONFIG DB  ----------------------------- //
-$_config['db']['1']['dbhost'] = 'localhost';
-$_config['db']['1']['dbuser'] = 'a0314225158';
-$_config['db']['1']['dbpw'] = '59667799';
-$_config['db']['1']['dbcharset'] = 'utf8';
-$_config['db']['1']['pconnect'] = '0';
-$_config['db']['1']['dbname'] = 'a0314225158';
-$_config['db']['1']['tablepre'] = 'hike_';
-$_config['db']['slave'] = '';
-$_config['db']['common']['slave_except_table'] = '';
+if($_top_domain_name != 'me'){
+    //production
+    $_config['db']['1']['dbhost'] = '10.66.114.140';
+    $_config['db']['1']['dbuser'] = 'root';
+    $_config['db']['1']['dbpw'] = 'facehike2014';
+    $_config['db']['1']['dbcharset'] = 'utf8';
+    $_config['db']['1']['pconnect'] = '0';
+    $_config['db']['1']['dbname'] = 'fh_bbs';
+    $_config['db']['1']['tablepre'] = 'hike_';
+    $_config['db']['slave'] = '';
+    $_config['db']['common']['slave_except_table'] = '';
+}else{
+    //lochost
+    $_config['db']['1']['dbhost'] = 'localhost';
+    $_config['db']['1']['dbuser'] = 'a0314225158';
+    $_config['db']['1']['dbpw'] = '59667799';
+    $_config['db']['1']['dbcharset'] = 'utf8';
+    $_config['db']['1']['pconnect'] = '0';
+    $_config['db']['1']['dbname'] = 'a0314225158';
+    $_config['db']['1']['tablepre'] = 'hike_';
+    $_config['db']['slave'] = '';
+    $_config['db']['common']['slave_except_table'] = '';
+}
 
 // --------------------------  CONFIG MEMORY  --------------------------- //
 $_config['memory']['prefix'] = 'Y4szbz_';
