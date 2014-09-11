@@ -54,9 +54,9 @@ abstract class Controller {
         if(method_exists($this,'_initialize'))
             $this->_initialize();
         //检测登录  todo  检测规则，什么情况下是需要检查呢？
-        if(false === $this->ignoreLogin){
-            $this->checkLoginStatus();
-        }
+        // if(false === $this->ignoreLogin){
+        //     $this->checkLoginStatus();
+        // }
     }
 
     /**

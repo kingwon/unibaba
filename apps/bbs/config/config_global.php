@@ -21,11 +21,11 @@ if($_top_domain_name != 'me'){
 }else{
     //lochost
     $_config['db']['1']['dbhost'] = 'localhost';
-    $_config['db']['1']['dbuser'] = 'a0314225158';
-    $_config['db']['1']['dbpw'] = '59667799';
+    $_config['db']['1']['dbuser'] = 'hike';
+    $_config['db']['1']['dbpw'] = 'facehike2014';
     $_config['db']['1']['dbcharset'] = 'utf8';
     $_config['db']['1']['pconnect'] = '0';
-    $_config['db']['1']['dbname'] = 'a0314225158';
+    $_config['db']['1']['dbname'] = 'fh_bbs';
     $_config['db']['1']['tablepre'] = 'hike_';
     $_config['db']['slave'] = '';
     $_config['db']['common']['slave_except_table'] = '';
